@@ -5,7 +5,7 @@ var db
 
 var respond = function(res, what) {
   res.writeHead(200, {'Content-Type': 'text/plain'})
-  res.end('v0.1\n' + what)
+  res.end('v0.2\n' + what)
 }
 
 MongoClient.connect('mongodb://mongo_container:27017/docker', function(err, dbi) {
