@@ -10,6 +10,8 @@ var respond = function(res, what) {
 
 MongoClient.connect('mongodb://mongo:27017/docker', function(err, dbi) {
   if(err) connected = err
+  
+  console.log(err, dbi)
 
   connected = true
 
