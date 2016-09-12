@@ -8,7 +8,7 @@ var respond = function(res, what) {
   res.end('v0.2\n' + what)
 }
 
-MongoClient.connect('mongodb://mongo_container:27017/docker', function(err, dbi) {
+MongoClient.connect('mongodb://mongo:27017/docker', function(err, dbi) {
   if(err) connected = err
 
   connected = true
